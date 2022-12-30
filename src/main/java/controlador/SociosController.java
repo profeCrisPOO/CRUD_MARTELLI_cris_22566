@@ -41,8 +41,11 @@ public class SociosController extends HttpServlet
         accion=request.getParameter("accion");
         if(accion==null||accion.isEmpty())
         {
-            dispatcher=request.getRequestDispatcher("vistas/socios.jsp");            
-        }
+            dispatcher=request.getRequestDispatcher("vistas/index.jsp");            
+        }else if(accion.equals("lista"))
+		{
+			dispatcher=request.getRequestDispatcher("vistas/socios.jsp");
+		}
 
 		else if(accion.equals("modificar"))
 		{

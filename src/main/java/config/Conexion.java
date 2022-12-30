@@ -9,14 +9,14 @@ import java.sql.SQLException;
 
 public class Conexion 
 {
-  public String driver="com.mysql.cj.jdbc.Driver";  
+  public String driver="com.mysql.jdbc.Driver";  
 
 public Connection getConnection() throws SQLException{
 
 Connection conexion=null;
 try{
     Class.forName(driver);
-    conexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/crud22566","root","");
+    conexion=DriverManager.getConnection("jdbc:mysql://localhost:3306/crudterminado","root","");
 
     }
 catch(ClassNotFoundException | SQLException e)

@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Cristina Martelli - 22566</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
@@ -18,7 +18,10 @@
     </head>
     <body>        
         <div class="container" >
-            <h1 class="text-center" >Modificar Socio</h1>
+            <nav class="navbar miBarra" style="background-color: #e3f2fd;">
+                <a href="socios.jsp"> </a>
+            </nav>
+          <h1 class="text-center" >Modificar Socio</h1>
                 <div class="row" >
                     <%
 				String id=request.getParameter("id");
